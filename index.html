@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <nav class="nav">
+        <div class="nav-part-1">
+          <img width="24" src="./icons8-menu-50.png" alt="" />
+          <h3>Task Manager</h3>
+        </div>
+        <div class="nav-part-2">
+          <img class="themeIcon" width="35" src="./icons8-sun-50.png" alt="" />
+          <h3>Theme</h3>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="left">
+          <button class="createtask">
+            <img width="28" src="./icons8-add-50.png" alt="" />
+            <h2 id="task">Create Task</h2>
+          </button>
+          <section class="pipeline">
+            <div class="pipeline1">
+              <li>
+                
+              </li>
+              Browser Rendering Pipeline
+              <img class="pipeline1img" src="./down.png" alt="" />
+            </div>
+            <div class="pipelinecards">
+              <div class="card">HTML</div>
+              <div class="arrow">↓</div>
+              <div class="card">Parsing</div>
+              <div class="arrow">↓</div>
+              <div class="card">Tokenization</div>
+              <div class="arrow">↓</div>
+              <div class="card">DOM Tree</div>
+              <div class="card">CSS</div>
+              <div class="arrow">↓</div>
+              <div class="card">CSSOM Tree</div>
+              <div class="khalidiv"></div>
+              <div class="card final">DOM Tree + CSSOM Tree → Render Tree</div>
+            </div>
+            <div class="totalTask">
+              <li></li>
+              Total task
+              <img class="pipeline1img" src="./down.png" alt="">
+            </div>
+            <div class="totalTaskNumber">
+              <h3>Total task: <span class="alltask">0</span></h3>
+              <h3>Pending task: <span class="pendingtask">0</span></h3>
+              <h3>Completed task: <span class="completedtask">0</span></h3>
+            </div>
+          </section>
+        </div>
+        <button class="clearAlltask">Clear tasks</button>
+        <div class="right"></div>
+      </div>
+    </main>
+    <section>
+      <div class="form">
+        <div class="formHeadingContainer">
+          <h1 class="formtaskheading">New task</h1>
+          <img class="formCloseButton" src="./cross.png" alt="" />
+        </div>
+        <form>
+          <input type="text" required placeholder="task title" />
+          <input type="text" required placeholder="task description" />
+          <h4 class="categoryStatus">Category</h4>
+          <select name="" class="categoryform" id="">
+            <option value="personal">personal</option>
+            <option value="work">work</option>
+          </select>
+          <h4 class="categoryStatus">Status</h4>
+          <select name="" class="statusform" id="">
+            <option value="pending">pending</option>
+            <option value="done">done</option>
+          </select>
+          <button class="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
